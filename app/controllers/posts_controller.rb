@@ -1,7 +1,9 @@
 class PostController < ApplicationController
 
   get '/posts' do
-    "I can see this!"
+    @posts = Post.all 
+
+    erb :"posts/index"
   end
 
 end
