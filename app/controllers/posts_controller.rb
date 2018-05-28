@@ -1,7 +1,7 @@
 class PostController < ApplicationController
 
-  get '/songs' do
+  get '/post' do
     "I can see this!"
-  end 
+  end
 
 end
