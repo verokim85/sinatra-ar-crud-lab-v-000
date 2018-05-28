@@ -1,6 +1,6 @@
 class PostController < ApplicationController
 
-  get '/post' do
+  get '/posts' do
     "I can see this!"
   end
 
