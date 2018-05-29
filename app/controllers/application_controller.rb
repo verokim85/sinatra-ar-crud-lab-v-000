@@ -21,6 +21,10 @@ class ApplicationController < Sinatra::Base
     erb :'posts/new'
   end
 
+  post '/posts' do 
+    raise params.inspect 
+  end 
+
   get '/posts/:id' do
     @post = Post.find(params[:id])
     erb :'posts/show'
