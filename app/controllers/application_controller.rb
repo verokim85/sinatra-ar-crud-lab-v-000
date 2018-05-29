@@ -14,12 +14,12 @@ class ApplicationController < Sinatra::Base
   get '/posts' do
       @posts = Post.all
 
-      erb :"posts/index"
+      erb :'posts/index'
     end
 
   get '/posts/new' do
     'DOES THIS LOAD?'
-  end 
+  end
 
   get '/posts/:id' do
     @post = Post.find(params[:id])
