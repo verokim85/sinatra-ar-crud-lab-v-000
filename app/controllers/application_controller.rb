@@ -8,8 +8,8 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  get '/' do
-  end
+  # get '/' do
+  # end
 
   get '/posts' do
       @posts = Post.all
@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
 
   post '/posts' do
     raise params.inspect
-  end 
+  end
 
   get '/posts/:id' do
     @post = Post.find(params[:id])
