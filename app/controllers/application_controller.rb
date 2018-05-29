@@ -24,6 +24,8 @@ class ApplicationController < Sinatra::Base
   post '/posts' do
     raise params.inspect
     # params {'name'=>'name of post', 'content'=>'content for post'}
+    @post = Post.new
+
   end
 
   get '/posts/:id' do
