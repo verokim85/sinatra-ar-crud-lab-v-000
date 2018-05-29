@@ -2,6 +2,7 @@
 
 <form action='/posts/<%= @post.id %>' method='POST'>
   <input type='hidden' name='_method' value='PATCH'>
+  
   <p>
     <input type='text' name='name' value='<%= @post.name %>'/>
 
