@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
     end
 
   get '/posts/new' do
-    'DOES THIS LOAD?'
+    erb :'posts/new'
   end
 
   get '/posts/:id' do
