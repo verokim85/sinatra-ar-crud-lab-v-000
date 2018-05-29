@@ -2,6 +2,8 @@
 
 <ol>
 <% @posts.each do |post| %>
-  <li><%= post.name %></li>  
+  <li>
+    <a href='/posts/'<%= post.id %>'>'
+  <li><%= post.name %></li>
 <% end %>
 </ol>
